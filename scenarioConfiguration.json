@@ -1,0 +1,615 @@
+{
+  "constants": {
+    "startIteration": 0,
+    "iterationCount": 100,
+    "framesPerIteration": 20,
+    "randomSeed": 539662031
+  },
+  "randomizers": {
+    "randomizerGroups": [
+      {
+        "randomizerId": "WaterStylized2FoamingRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "foamSize": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0099999997764825821,
+                      "max": 0.99900001287460327
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "enableFoam": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                },
+                "threshold": {
+                  "scalar": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "value": {
+                      "num": 0.5,
+                      "limits": {
+                        "min": 0.0,
+                        "max": 1.0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "WaterStylized2ColorRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {}
+      },
+      {
+        "randomizerId": "WaterLevelRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "waterLevelRise": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "normal": {
+                      "min": -1.0,
+                      "max": 1.0,
+                      "mean": 0.0,
+                      "stddev": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "WaterStylized2ReflectionRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "reflectionStrength": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "distortion": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "WaterStylized2DepthRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "verticalDepth": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "distanceDepth": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "LightIntensityRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "lightIntensity": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "normal": {
+                      "min": -1.0,
+                      "max": 1.0,
+                      "mean": 0.0,
+                      "stddev": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "FogDensityRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "fogDensity": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "normal": {
+                      "min": -1.0,
+                      "max": 1.0,
+                      "mean": 0.0,
+                      "stddev": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "fogEnable": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                },
+                "threshold": {
+                  "scalar": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "value": {
+                      "num": 0.5,
+                      "limits": {
+                        "min": 0.0,
+                        "max": 1.0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "SkyboxRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {}
+      },
+      {
+        "randomizerId": "SkyColorRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "lightIntensity": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "PostEffectsRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "enablePostEffect": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                },
+                "threshold": {
+                  "scalar": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "value": {
+                      "num": 0.800000011920929,
+                      "limits": {
+                        "min": 0.0,
+                        "max": 1.0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "randomizerId": "RainIntensityRandomizer",
+        "metadata": {
+          "name": "",
+          "description": "",
+          "imageLink": ""
+        },
+        "state": {
+          "enabled": true,
+          "canBeSwitchedByUser": true
+        },
+        "items": {
+          "lowIntensity": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "constant": {
+                      "value": 100.0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "mediumIntensity": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "constant": {
+                      "value": 1000.0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "highIntensity": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "constant": {
+                      "value": 10000.0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "enableRain": {
+            "param": {
+              "metadata": {
+                "name": "",
+                "description": "",
+                "imageLink": ""
+              },
+              "items": {
+                "value": {
+                  "samplerOptions": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "uniform": {
+                      "min": 0.0,
+                      "max": 1.0
+                    }
+                  }
+                },
+                "threshold": {
+                  "scalar": {
+                    "metadata": {
+                      "name": "",
+                      "description": "",
+                      "imageLink": ""
+                    },
+                    "value": {
+                      "num": 0.5,
+                      "limits": {
+                        "min": 0.0,
+                        "max": 1.0
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
